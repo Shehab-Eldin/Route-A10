@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bookmarker</h1>
+        <h2>📑 Bookmark your favorite sites 📑</h2>
+        <form id="bookmark-form">
+            <input type="hidden" id="bookmarkId">
+            <div class="form-group">
+                <label for="siteName">📚 Site Name</label>
+                <input type="text" id="siteName" placeholder="Bookmark Name" required>
+            </div>
+            <div class="form-group">
+                <label for="siteUrl">🔗 Site URL</label>
+                <input type="url" id="siteUrl" placeholder="Website URL" required>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="bookmark-list">
+                <!-- Bookmarks will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
